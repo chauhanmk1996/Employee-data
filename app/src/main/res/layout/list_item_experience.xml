@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp_36"
+    android:layout_marginTop="@dimen/dp_20"
+    android:layout_marginEnd="@dimen/dp_36">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCompanyName"
+        style="@style/employeeListTextView"
+        android:layout_width="@dimen/dp_0"
+        android:textColor="@color/color_212121"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintEnd_toStartOf="@+id/tvExperience"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Apollo Healthcare" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvExperience"
+        style="@style/employeeListTextView"
+        android:textColor="@color/color_C4C4C4"
+        android:textSize="@dimen/sp_10"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCompanyName"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="2 + Years" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvJobTitle"
+        style="@style/employeeListTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCompanyName"
+        tools:text="Registered Nurse" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLocation"
+        style="@style/employeeListTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvJobTitle"
+        tools:text="Chicago, IL" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTime"
+        style="@style/employeeListTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocation"
+        tools:text="March 5 2019 - present" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_16"
+        android:background="@color/color_D6D6D6"
+        app:layout_constraintTop_toBottomOf="@+id/tvTime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Employee Data</string>
+
+    <string name="back_press_exit_line">Press back again to exit</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="connect_exception_error">Failed to connect to server</string>
+    <string name="socket_timeout_error">Server is taking longer time to respond.</string>
+    <string name="error_something_went_wrong_please_retry">Something went wrong please retry</string>
+    <string name="experience_details">Experience details</string>
+    <string name="add_experience">Add Experience +</string>
+    <string name="add_experience_heading">Add Experience</string>
+    <string name="year">"Year"</string>
+    <string name="job_title">Job Title</string>
+    <string name="company_name">Company name</string>
+    <string name="location">Location</string>
+    <string name="from">From</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="to">To</string>
+    <string name="are_you_currently_employed_here">Are you currently employed here</string>
+    <string name="save">Save</string>
+    <string name="please_enter_job_title">Please enter job title</string>
+    <string name="please_enter_company_name">Please enter company name</string>
+    <string name="please_enter_location">Please enter location</string>
+    <string name="please_select_from_date">Please select from date</string>
+    <string name="please_select_to_date">Please select to date</string>
+    <string name="experience_added_successfully">Experience added successfully</string>
+</resources>

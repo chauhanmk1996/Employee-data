@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_8"
+    android:elevation="@dimen/dp_4"
+    app:cardCornerRadius="@dimen/dp_8">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_16">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_6"
+            android:src="@drawable/ic_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etJobTitle"
+            style="@style/addExperienceEditText"
+            android:layout_marginTop="@dimen/dp_24"
+            android:hint="@string/job_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etCompanyName"
+            style="@style/addExperienceEditText"
+            android:layout_marginTop="@dimen/dp_24"
+            android:hint="@string/company_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etJobTitle" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etLocation"
+            style="@style/addExperienceEditText"
+            android:layout_marginTop="@dimen/dp_24"
+            android:hint="@string/location"
+            android:imeOptions="actionDone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etCompanyName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_48"
+            android:layout_marginTop="@dimen/dp_16"
+            android:fontFamily="@font/polly_rounded_regular"
+            android:text="@string/from"
+            android:textColor="@color/color_BEBEBE"
+            android:textSize="@dimen/sp_11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etLocation" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etFrom"
+            style="@style/addExperienceEditText"
+            android:layout_marginTop="@dimen/dp_6"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="@string/start_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFrom" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_48"
+            android:layout_marginTop="@dimen/dp_16"
+            android:fontFamily="@font/polly_rounded_regular"
+            android:text="@string/to"
+            android:textColor="@color/color_BEBEBE"
+            android:textSize="@dimen/sp_11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etFrom" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etTo"
+            style="@style/addExperienceEditText"
+            android:layout_marginTop="@dimen/dp_6"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="@string/end_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCurrentlyWorking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_24"
+            android:fontFamily="@font/polly_rounded_regular"
+            android:text="@string/are_you_currently_employed_here"
+            android:textColor="@color/color_B5B3B3"
+            android:textSize="@dimen/sp_11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etTo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCurrentlyEmployed"
+            android:layout_width="@dimen/dp_54"
+            android:layout_height="@dimen/dp_28"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:src="@drawable/off"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCurrentlyWorking"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvCurrentlyWorking" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

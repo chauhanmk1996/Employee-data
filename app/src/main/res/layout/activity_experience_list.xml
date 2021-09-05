@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootExperienceList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.employeeList.ExperienceListActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/top_end_round"
+        android:fontFamily="@font/polly_rounded_regular"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_36"
+        android:paddingEnd="@dimen/dp_36"
+        android:text="@string/experience_details"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_24"
+        android:background="@color/color_D6D6D6"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeading" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_16">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:itemCount="2"
+                tools:listitem="@layout/list_item_experience" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAddExperience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_36"
+                android:layout_marginTop="@dimen/dp_22"
+                android:fontFamily="@font/polly_rounded_regular"
+                android:padding="@dimen/dp_8"
+                android:text="@string/add_experience"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvExperience" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

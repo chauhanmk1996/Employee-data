@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="appTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <!-- Employee TextView Theme. -->
+    <style name="employeeListTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_969696</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <!-- Add Experience EditText Theme. -->
+    <style name="addExperienceEditText" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_64</item>
+        <item name="android:background">@drawable/edit_text_round_32</item>
+        <item name="android:fontFamily">@font/polly_rounded_regular</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/color_393838</item>
+        <item name="android:textColorHint">@color/color_393838</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">textCapSentences</item>
+        <item name="android:layout_marginStart">@dimen/dp_24</item>
+        <item name="android:layout_marginEnd">@dimen/dp_24</item>
+        <item name="android:paddingStart">@dimen/dp_24</item>
+        <item name="android:paddingEnd">@dimen/dp_24</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+</resources>
